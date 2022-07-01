@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 public class Conferenza extends Evento {
 	private String argomento;
-	private String oratore;
+	private Oratore oratore;
 
-	public Conferenza(String titolo, LocalDate data, int postiTotali) throws Exception {
+	public Conferenza(String titolo, LocalDate data, int postiTotali,String argomento, Oratore oratore) throws Exception {
 		super(titolo, data, postiTotali);
 		this.argomento = argomento;
 		this.oratore = oratore;
@@ -20,11 +20,11 @@ public class Conferenza extends Evento {
 		this.argomento = argomento;
 	}
 
-	public String getOratore() {
+	public Oratore getOratore() {
 		return oratore;
 	}
 
-	public void setOratore(String oratore) {
+	public void setOratore(Oratore oratore) {
 		this.oratore = oratore;
 	}
 
