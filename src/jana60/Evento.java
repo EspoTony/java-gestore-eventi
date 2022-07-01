@@ -84,4 +84,14 @@ public class Evento {
 		dataFormattata = this.data.format(formdate);
 		return dataFormattata + " - " + this.titolo;
 	}
+
+	public void prenota() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void disdici() {
+		// TODO Auto-generated method stub
+		
+	}
 }
