@@ -7,6 +7,15 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 		Scanner scan = new Scanner(System.in);
+		String confCheck;
+		
+		do {
+            System.out.println("L'evento che vuoi inserire è una conferenza? y/n");
+            confCheck=scan.nextLine();
+        }while (!confCheck.equals("y") && !confCheck.equals("n"));
+
+        switch (confCheck) {
+            case "n":
 		System.out.print("Inserisci il titolo dell'evento: ");
 		String titoloEvento = scan.nextLine();
 
@@ -78,6 +87,9 @@ public class Main {
 		}
 
 		scan.close();
-	}
-
+		break;
+            case"y":
+               
+        }
+	 }
 }
