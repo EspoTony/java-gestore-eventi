@@ -2,13 +2,11 @@ package jana60;
 
 import java.time.LocalDate;
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
 
 		Scanner scan = new Scanner(System.in);
-
 		System.out.print("Inserisci il titolo dell'evento: ");
 		String titoloEvento = scan.nextLine();
 
@@ -23,7 +21,7 @@ public class Main {
 
 		System.out.print("Inserisci il numero di posti totali: ");
 		int postiTotaliEvento = scan.nextInt();
-
+		
 		try {
 			Evento evento = new Evento(titoloEvento, dataEvento, postiTotaliEvento);
 			System.out.println("Hai creato l'evento: " + titoloEvento.toUpperCase() + " in data " + dataEvento

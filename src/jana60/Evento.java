@@ -76,15 +76,6 @@ public class Evento {
 			postiPrenotati --;
 		}
 	}
-	
-	@Override
-	public String toString() {
-		String dataFormattata;
-		DateTimeFormatter formdate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		dataFormattata = this.data.format(formdate);
-		return dataFormattata + " - " + this.titolo;
-	}
-
 	public void prenota() {
 		// TODO Auto-generated method stub
 		
@@ -93,5 +84,13 @@ public class Evento {
 	public void disdici() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	@Override
+	public String toString() {
+		String dataFormattata;
+		DateTimeFormatter formdate = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		dataFormattata = this.data.format(formdate);
+		return dataFormattata + " - " + this.titolo;
 	}
 }
